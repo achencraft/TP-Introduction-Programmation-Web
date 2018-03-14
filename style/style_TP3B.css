@@ -28,7 +28,7 @@ footer{
 }
 
 #contenu{
-	/*float:left;  /* float à gauche MAIS après le <nav> */
+	float:left;  /* float à gauche MAIS après le <nav> */
 	width:70%;	
 	margin:0px;
 	background-color:white;
@@ -36,7 +36,7 @@ footer{
 }
 
 #commentaire{
-	/*float:right;  /* float à droite */
+	float:right;  /* float à droite */
 	width: 15%;
 	height: 100%;
 	vertical-align:top;
