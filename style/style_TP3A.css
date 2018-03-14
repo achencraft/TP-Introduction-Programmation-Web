@@ -1,32 +1,49 @@
+/*Cette feuille de style place les grands élements avec la propriété display*/
+
 
 html,body{
 	margin-left:0px;
 	margin-right:0px;
 	margin-top:0px;
 	margin-bottom:0px;
-	padding-bottom:20px;
+	padding-bottom:0px;
 	width:100%;
 	position: relative;
+	background-color: #FFFFBC;
 	font-family:sans-serif;
 	font-size:90%;
 }
 
 header{
-	position:relative;
-    width:85%;
-	margin-left:15%;
+    width:100%;
 	display: block;
 }
 
 footer{
-
 	text-align:center;
-	position:fixed;	
 	bottom:0;
 	background-color:white;
-	border: 1px solid black;
+	border-top: 1px solid black;
 	width:100%;
 	height:3%;
+	display: block;
+}
+
+#contenu{
+	display: inline-block;
+	width:70%;	
+	margin:0px;
+	background-color:white;
+	text-align:center;
+}
+
+#commentaire{
+	width: 15%;
+	height: 100%;
+	display: inline-block;
+	vertical-align:top;
+	margin:0;
+	text-align:center;
 }
 
 /* DEBUT mise en page du menu <nav> */
@@ -34,10 +51,10 @@ footer{
 nav{
 	width: 15%;
 	height: 100%;
-	position:absolute;
-	top:0;
-	left:0;
-	background-color: #AEB5E0;
+	background-color: #FFFFBC;
+	display: inline-block;
+	vertical-align:top;
+	margin:0;
 }
 
 #menu{
@@ -63,18 +80,13 @@ li.menu{
 
 /* FIN mise en page du menu <nav> */
 
-#contenu{
-	position:relative;
-	width:80%;	
-	margin-left:18%;
-	display: block;
-	min-height:60em; /*pour que le menu soit en entier*/
-}
+
 
 section{
 	display:inline-block;
-	width:100%;
+	width:95%;
 	margin-bottom:50px;
+	text-align:left;
 }
 
 section.reponses{
@@ -137,7 +149,7 @@ aside.fixe{
 	position:fixed;
 	width:18%;
 	min-height:50%;
-	right:10px;
+	right:15px;
 	padding:3px;
 	border: 1px solid #c8ccd1;
 	background-color: #f9f9f9;
@@ -195,6 +207,8 @@ a:active{
 	text-decoration:underline;
 }
 /*FIN mise en place des liens*/
+
+
 	 
 p{
 	color:#404040;

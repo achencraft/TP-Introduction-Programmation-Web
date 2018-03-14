@@ -1,12 +1,14 @@
-
 <!--
-Voici le rendu pour le TP2 de programmation WEB
+Voici le rendu pour les TP3 et 4 de programmation WEB
 
-Mon site étant réalisé sur plusieurs pages HTML, je dois donc vous le transmettre sous forme de .zip
-Si ce format ne convient pas, je regrouperai le tout en un seul fichier html pour le prochain TP à rendre
+Cette page html est structurée avec la propriété display inline, block, ou inline-block.
+le CSS correspondant est : style/style_TP3A.css
 
 Dans tous les cas, une version complète de mon site est disponible sur Github https://github.com/achencraft/siteweb-tram
 -->
+
+
+
 
 <!DOCTYPE html>
 
@@ -14,7 +16,11 @@ Dans tous les cas, une version complète de mon site est disponible sur Github h
 	<head>
 		<meta charset="utf-8">
 		<meta content="text/html; charset=UTF-8" http-equiv="contenttype">
-		<link rel="stylesheet" href="style/style.css" />
+		
+
+		<link rel="stylesheet" href="style/style_TP3A.css" /> 
+
+		
 		<link rel="icon" href="files/images/favicon.ico" />
 		<title>:: Le réseau Tram ::</title>
 		
@@ -35,7 +41,7 @@ Dans tous les cas, une version complète de mon site est disponible sur Github h
 	
 		
 	<header>	
-		<img src="files/images/header.gif" alt="entête" width="100%"/>
+		<img src="files/images/header.gif" alt="logo du site" width="100%"/>
 	</header>
 	
 	
@@ -141,7 +147,7 @@ Dans tous les cas, une version complète de mon site est disponible sur Github h
 			
 		<section id="section2">
 	
-			<p class="texte">Voici un tableau récapitulant les différentes lignes du réseau de tramway :<br>
+			<p class="textei">Voici un tableau récapitulant les différentes lignes du réseau de tramway :<br>
 			</p>
 			
 				<table border="1" class="section">
@@ -152,34 +158,34 @@ Dans tous les cas, une version complète de mon site est disponible sur Github h
 					<th class="col4">Exploitant</th>			
 				</tr>
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne A" src="files/images/ligneA.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneA.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Parc des Sports - Illkirch Graffenstaden</td>
 					<td rowspan=6>C.T.S</td>			
 				</tr>
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne B" src="files/images/ligneB.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneB.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Lingolsheim Tiergaertel - Hoenheim Gare</td>
 				</tr>
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne C" src="files/images/ligneC.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneC.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Gare Centrale - Neuhof Rodolphe Reuss</td>	
 				</tr>
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne D" src="files/images/ligneD.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneD.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Poteries - Port du Rhin - Kehl Bahnhof</td>
 				</tr>		
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne E" src="files/images/ligneE.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneE.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Campus d'Illkirch - Robertsau Boeklin</td>	
 				</tr>
 				<tr>
-					<td><img class="logo_ligne" alt="logo ligne F" src="files/images/ligneF.bmp"/></td>
-					<td><img class="logo_handicap" alt="accessible handicapé" src="files/images/handicap.png"/></td>
+					<td><img class="logo_ligne" src="files/images/ligneF.bmp"/></td>
+					<td><img class="logo_handicap" src="files/images/handicap.png"/></td>
 					<td>Elsau - Place d'Islande</td>	
 				</tr>
 			</table>
@@ -222,12 +228,27 @@ Dans tous les cas, une version complète de mon site est disponible sur Github h
 		</section>
 		
 		
+	</div><!--
+	
+	
+	
+	--><div id="commentaire">
+		<section>
+			les commentaires
+			<p>
+			Les modifications CSS du TP3 sont visibles uniquement sur la page d'accueil
+			</p>
+			<ul>
+			<li><a href="">Version Inline / Block</a></li>
+			<li><a href="index_float.html">Version float</a></li>
+			<li><a href="index.html">Version libre de ma part</a></li>
+			</ul>
+		</section>		
 	</div>
-
 	
 	
 	<footer>
-	Page web réalisée par Lucas LETT - groupe 1 - CMI ISR    :: <b> Site complet disponible <a href="http://unistra.achencraft.fr">ici</a></b>
+	Page web réalisée par Lucas LETT - groupe 1 - CMI ISR
 	</footer>
 	
 	

@@ -4,7 +4,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta content="text/html; charset=UTF-8" http-equiv="contenttype">
-		<meta name="viewport" content="width=device-width">	
 		<link rel="stylesheet" href="../../style/style.css" />
 		<link rel="icon" href="../../files/images/favicon.ico" />
 		<title>:: Réponses au TP ::</title>
@@ -100,6 +99,8 @@
 		<li><a href="#en_tete">Les balises d'en-tête</a></li>
 		<li><a href="#mise_en_page">Mise en forme avec CSS</a></li>
 		<li><a href="#formulaire">Les formulaires</a></li>
+		<li><a href="#CSS_float">La propriété float du CSS</a></li>
+		<li><a href="#CSS_blocs">La propriété blocs du CSS</a></li>
 		</ul>
 		</aside>
 	
@@ -167,6 +168,51 @@
 		Elle s'utilise ainsi :<br>
 		/* décalage-x | décalage-y | rayon_de_flou | étalement | couleur */<br>
 		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		</li>
+		</ol>
+	
+	</section>
+	
+
+	
+	<section class="reponses" id="CSS_float">
+		<h3>La propriété float du CSS</h3>
+		
+		<ol>
+		<li><h4></h4>
+		La propriété float va faire sortir l'élément équipé du "flux" standard. Il va donc y avoir des superpositions.
+		</li>
+		<li><h4></h4>
+		Pour eviter ces superpositions, je vais mettre les éléments voisins en float aussi.<br>
+		Je vais même utiliser la propriété clear !
+		</li>
+		<li><h4></h4>
+		Je vais utiliser "clear:both;" pour le footer, afin qu'il se place SOUS tous les éléments flottant.<br>
+		Il existe aussi "clear:left;" et "clear:right;".
+		</li>
+		</ol>
+	
+	</section>
+	
+
+	
+	<section class="reponses" id="CSS_blocs">
+		<h3>La propriété blocs du CSS</h3>
+		
+		<ol>
+		<li><h4>Comportements par défaut</h4>
+		Un élément Inline est une voite qui réagit comme du texte.<br>
+		Un élément Block va sauter à la logne par exemple.<br>
+		Toutes les explications <a href="https://la-cascade.io/la-difference-entre-block-et-inline/">ici</a>.
+		</li>
+		<li><h4>la propriété position</h4>
+		Cette propriété va permettre de positionner les blocs<br>
+		Les variables sont : static, relative, absolute, fixed.<br>
+		Toutes les explications <a href="http://fr.learnlayout.com/position.html">ici</a>.
+		</li>
+		
+		<li><h4></h4>
+		Voir mon agencement personnalisé <a href="../../index.html">ici</a> 
 		</li>
 		</ol>
 	
