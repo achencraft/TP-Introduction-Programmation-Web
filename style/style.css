@@ -63,6 +63,16 @@ li.menu{
 
 /* FIN mise en page du menu <nav> */
 
+#info{
+	border-style:dotted;
+	border-radius:15px;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	margin-bottom:20px;
+}
+
 #contenu{
 	position:relative;
 	width:80%;	
@@ -292,6 +302,13 @@ input.contact{
 	background-color:white;
 }
 
+div.radio{
+	height:30px;
+	padding:5px;
+	width:100%;
+}
+
+
 .boutonSoumission{
 	background-color:#A9D0F5;
 	border-radius: 10px 0px;
@@ -307,4 +324,14 @@ input.contact{
 	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 10px 30px 0 rgba(0,0,0,0.19);.
 }
 
+#sortie_formulaire{
+	margin-left: auto;
+	margin-right: auto;	
+	width:40%;
+	text-align:center;
+}
+
+input{
+	border-radius:15px;
+}
 /*FIN formulaire de contact*/
