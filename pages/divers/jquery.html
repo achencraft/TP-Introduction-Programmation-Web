@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="text/html" charset="UTF-8" http-equiv="Content-Type">		
+		<link rel="stylesheet" href="../../style/style.css" />
+		<link rel="stylesheet" href="./style/jquery.css" />
+		<link rel="icon" href="../../files/images/favicon.ico" />
+		<title>:: Demo de jQuery ::</title>
+		
+		<meta name="description" content="Présentation du réseau de tramway de strasbourg">
+		<meta name="author" content="Lucas LETT">
+		<meta name="keywords" content="tramway, CTS">
+		<meta name="viewport" content="width=device-width">
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/file2.js"></script>
+		
+	</head>	
+<body>
+
+
+	<header>	
+		<img src="../../files/images/header.gif" alt="entête" width="100%"/>
+	</header>
+	
+	<nav>
+		<div id="logo">
+			<a href="../../index.html"><img src="../../files/images/logo.gif" alt="logo du site" width="90%"/></a>
+		</div>
+
+
+		<div id="menu">
+		
+		<ul class="menu">
+			<li class="menu"><a href="../../index.html">Présentation</a></li>
+			<li class="menu"><a href="../../index.html#section2">Les 6 lignes</a></li>
+			<li class="menu"><a href="../../historique.html">Historique</a></li>
+		</ul>
+		
+		<h4>Les lignes</h4>
+		<ul class="menu">
+			<li class="menu"><a href="../lignes/ligneA.html">Ligne A</a></li>
+			<li class="menu"><a href="../lignes/ligneB.html">Ligne B</a></li>
+			<li class="menu"><a href="../lignes/ligneC.html">Ligne C</a></li>
+			<li class="menu"><a href="../lignes/ligneD.html">Ligne D</a></li>
+			<li class="menu"><a href="../lignes/ligneE.html">Ligne E</a></li>
+			<li class="menu"><a href="../lignes/ligneF.html">Ligne F</a></li>
+		</ul>
+		
+		<h4>Les plans du réseau</h4>
+		<ul class="menu">
+			<li class="menu"><a href="../plans/plan1.html">Plan détaillé </a></li>
+			<li class="menu"><a href="../plans/plan2.html">Plan schématique</a></li>
+			<li class="menu"><a href="../plans/plan3.html">Plan de soirée</a></li>
+			<li class="menu"><a href="../plans/plan4.html">Plan format de poche</a></li>
+			<li class="menu"><a href="../plans/plan5.html">Plan touristique </a></li>
+		</ul>
+		
+		<h4>Les extensions</h4>
+		<ul class="menu">
+			<li class="menu"><a href="../extensions/ext_D.html">Ligne D - Kehl Centre</a></li>
+			<li class="menu"><a href="../extensions/ext_E.html">Ligne E - Robertsau</a></li>
+			<li class="menu"><a href="../extensions/ext_F.html">Ligne F - Koenigshoffen</a></li>
+		</ul>
+		
+		<h4>Le parc de tramway</h4>
+		<ul class="menu">
+			<li class="menu"><a href="../tramways/eurotram.html">Les Eurotram</a></li>
+			<li class="menu"><a href="../tramways/citadis.html">Les Citadis</a></li>
+		</ul>
+		
+		<h4>Les unités de production</h4>
+		<ul class="menu">
+			<li class="menu"><a href="../depots/upc.html">Cronenbourg</a></li>
+			<li class="menu"><a href="../depots/upe.html">Elsau</a></li>
+			<li class="menu"><a href="../depots/upk.html">Kibitzenau</a></li>
+		</ul>
+
+		<h4>Divers</h4>
+		<ul class="menu">
+			<li class="menu"><a href="contact.html">Contact</a></li>
+			<li class="menu"><a href="js.html">Javascript</a></li>
+			<li class="menu"><a href="">JQuery</a></li>
+			<li class="menu"><a href="tp.html">Réponses aux TP</a></li>
+		</ul>
+		</div>
+			
+		
+	</nav>
+	
+	
+	<div id="contenu">
+
+	<h1> Demo de jquery </h1>
+	
+	
+	<section class="reponses" style="width:90%">
+	
+	<p class="tramway">Ceci est un paragraphe que j'aime bien</p>
+	
+	<p id="citadis">Ceci est un autre paragraphe</p>
+	
+	</section>
+	<section class="reponses" style="width:90%">
+	
+	<div class="callback">
+	<p>Du texte</p>
+	<p class="disparaitre">Test d’une fonction de rappel</p>
+	<p>Du texte, encore</p>
+	</div>
+	
+	
+	</section>
+	
+	
+		<section>
+	
+	<div class="contact">
+		<form name="contact">
+		
+			<div style="float:left; width:30%">
+			<p>Nom</p>
+			</div>
+			<div>
+			<input class="contact" name="nom" type="text" id="nom">
+			</div><p>
+			
+			<div style="float:left; width:30%">
+			<p>Prénom</p>
+			</div>
+			<div>
+			<input class="contact" name="prenom" type="text" id="prenom" />
+			</div><p>
+			
+			<div style="float:left; width:30%">
+			<p>N° étudiant</p>
+			</div>
+			<div>
+			<input class="contact" name="numero" type="text" id="numero" />
+			</div><p>
+			
+			<div style="float:left; width:30%">
+			<p>Abonné CTS</p>
+			</div>
+			<div class="radio">
+			<input type="radio" name="cts" value="oui" id="cts1">oui</input> 
+			<input type="radio" name="cts" value="non" id="cts2">non</input>
+			</div><p>
+
+			<div style="float:left; width:30%">
+			<p>Filière</p>
+			</div>
+			
+			</form>
+			<div class="radio">
+			<select name="filiere" form="filiere" id="filiere">
+			<option value="-">-</option>
+			<option value="Maths">Maths</option>
+			<option value="Info">Info</option>
+			<option value="CMI">CMI</option>
+			<option value="MPA">MPA</option>
+			</select>
+			</div><p>
+
+			<div style="margin-left: auto;margin-right: auto;width:30%;">
+			<input class="boutonSoumission" id="envoi" type=submit value="Soumettre">
+			</div><p>
+			
+			<div align="center">
+			Nombre de réponses : <span id="quantite">0</span>
+			</div>
+		
+		
+
+			
+	</div>	
+	
+		<div id="sortie_formulaire">
+		
+		</div>
+	</section>
+	
+	
+	</div>
+	<footer>
+	Page web réalisée par Lucas LETT - groupe 1 - CMI ISR    :: <b> Site complet disponible <a href="http://achencraft.fr/unistra">ici</a></b>
+	</footer>
+	
+	
+	
+		
+	
+	
+</body>
+
+</html>

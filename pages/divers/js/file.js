@@ -1,5 +1,9 @@
+//TP4
+
 
 var notes = [10, 15, 6, 14, 14, 13, 19, 10, 17, 9];
+var listeEtudiant=new Array()
+
 
 
 function modifierTexte ()
@@ -69,10 +73,64 @@ function rep_formulaire ()
 	ligne_sortie.innerHTML = sortie;
 	document.getElementById("sortie_formulaire").appendChild(ligne_sortie);
 	nombre();
+	
+	listeEtudiant.push(new Etudiant(prenom[0].value, nom[0].value, numero[0].value, abo, filiere[0].value))
 }
 
 
 function nombre ()
 {
     document.getElementById("quantite").innerHTML = document.getElementsByClassName("toto").length; 
+}
+
+//TP6
+
+ function Etudiant(prenom, nom, numero, cts, filiere) {
+  this.nom = nom
+  this.prenom = prenom
+  this.numero = numero;
+  this.cts = cts;
+  this.filiere = filiere;
+  this.sePresenter = function() {
+    document.getElementById("Etudiants").innerHTML = "Bonjour, je m\'appelle "+ this.prenom + " et je suis en " + this.filiere +".";
+  };
+  this.reorienter = function(new_filiere) {
+	if(new_filiere === "Maths" || new_filiere === "Info" || new_filiere === "CMI" || new_filiere === "MPA"){
+		this['filiere']=new_filiere;
+	} else {
+		alert('filière inexistante');  
+		}
+	}	
+}
+
+function reorientation (nbr){
+		listeEtudiant[nbr].reorienter(document.getElementById("new_filiere").value)
+}
+
+
+//TP6 - image
+
+
+
+var images = document.getElementsByClassName("js-image");
+var i;
+var num = 0;
+for (i=0; i<images.length; i++)
+{
+    images[i].addEventListener("mouseenter", addlegend(i));
+    images[i].addEventListener("mouseleave", removelegend(i));
+    num = num + 1;
+}
+
+function addlegend (num) {
+    return function () {
+	images[num].getElementsByClassName("js-description")[0].style.display = "inline";
+    }
+}
+
+function removelegend (num) {
+    return function ()
+    {
+	images[num].getElementsByClassName("js-description")[0].style.display = "none";
+    }
 }

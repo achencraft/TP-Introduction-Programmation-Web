@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
-		<meta content="text/html; charset=UTF-8" http-equiv="contenttype">		
+		<meta content="text/html" charset="UTF-8" http-equiv="Content-Type">		
 		<link rel="stylesheet" href="../../style/style.css" />
 		<link rel="icon" href="../../files/images/favicon.ico" />
 		<title>:: Demo de Javascript ::</title>
@@ -17,7 +17,7 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		<script type="text/javascript" src="./js/file.js"></script>
+
 		
 	</head>	
 <body>
@@ -84,6 +84,7 @@
 		<ul class="menu">
 			<li class="menu"><a href="contact.html">Contact</a></li>
 			<li class="menu"><a href="">Javascript</a></li>
+			<li class="menu"><a href="jquery.html">JQuery</a></li>
 			<li class="menu"><a href="tp.html">Réponses aux TP</a></li>
 		</ul>
 		</div>
@@ -145,14 +146,14 @@
 			<p>Prénom</p>
 			</div>
 			<div>
-			<input class="contact" name="prenom"type="text" id="prenom" />
+			<input class="contact" name="prenom" type="text" id="prenom" />
 			</div><p>
 			
 			<div style="float:left; width:30%">
 			<p>N° étudiant</p>
 			</div>
 			<div>
-			<input class="contact" name="numero"type="text" id="numero" />
+			<input class="contact" name="numero" type="text" id="numero" />
 			</div><p>
 			
 			<div style="float:left; width:30%">
@@ -196,15 +197,44 @@
 		</div>
 	</section>
 	
+	<section align="center" class="reponses" style="width:90%">
+	
+	<input type="button" value="afficher Etudiant1" onClick="listeEtudiant[0].sePresenter()">
+	<input type="button" value="afficher Etudiant2" onClick="listeEtudiant[1].sePresenter()">
+	
+		<p id="Etudiants"></p>
+		
+	<input type="button" value="changer de filière etudiant 1" onClick="reorientation(0)"> <input class="contact" name="new_filiere" type="text" id="new_filiere" />
+	<input type="button" value="changer de filière etudiant 2" onClick="reorientation(1)"> 
+
 	
 	
+		
+
+	
+	</section>
+	
+
+	<section align="center" class="reponses" style="width:90%">
+	
+	<div class="js-image">
+	<img width="400px" src="http://achencraft.fr/passion-CTS/Photos/travauxUPKibitzenau/2%20%c3%a9tat%20des%20travaux%20le%202%20novembre%202005/Chantier%20UPK%20(43).jpg" alt="construction dépot UPK"/>
+	<p class="js-description">Rail d'essai - dépot Kibitzenau</p>
 	</div>
 	
+	<div class="js-image">
+	<img width="400px" src="http://achencraft.fr/passion-CTS/Photos/travauxUPKibitzenau/2%20%c3%a9tat%20des%20travaux%20le%202%20novembre%202005/Chantier%20UPK%20(18).jpg" alt="construction dépot UPK"/>
+	<p class="js-description">Atelier - dépot Kibitzenau</p>
+	</div>
 	
+	<div class="js-image">
+	<img width="400px" src="http://achencraft.fr/passion-CTS/Photos/travauxUPKibitzenau/2%20%c3%a9tat%20des%20travaux%20le%202%20novembre%202005/Chantier%20UPK%20(27).jpg" alt="construction dépot UPK"/>
+	<p class="js-description">Entrepot de stockage - dépot Kibitzenau</p>
+	</div>
+
 	
-	
-	
-	
+	</section>
+	</div>
 	
 	<footer>
 	Page web réalisée par Lucas LETT - groupe 1 - CMI ISR    :: <b> Site complet disponible <a href="http://achencraft.fr/unistra">ici</a></b>
@@ -212,7 +242,7 @@
 	
 	
 	
-		
+				<script type="text/javascript" src="./js/file.js"></script>
 	
 	
 </body>

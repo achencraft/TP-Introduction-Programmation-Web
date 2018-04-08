@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
-		<meta content="text/html; charset=UTF-8" http-equiv="contenttype">
+		<meta content="text/html" charset="UTF-8" http-equiv="Content-Type">
 		<link rel="stylesheet" href="../../style/style.css" />
 		<link rel="icon" href="../../files/images/favicon.ico" />
 		<title>:: Réponses au TP ::</title>
@@ -82,6 +82,7 @@
 		<ul class="menu">
 			<li class="menu"><a href="contact.html">Contact</a></li>
 			<li class="menu"><a href="js.html">Javascript</a></li>
+			<li class="menu"><a href="jquery.html">JQuery</a></li>
 			<li class="menu"><a href="">Réponses aux TP</a></li>
 		</ul>
 		</div>
@@ -103,6 +104,8 @@
 		<li><a href="#CSS_float">La propriété float du CSS</a></li>
 		<li><a href="#CSS_blocs">La propriété blocs du CSS</a></li>
 		<li><a href="#JS-intro">Premiers pas en Javascript</a></li>
+		<li><a href="#JS-object">Les objets en Javascript</a></li>
+		<li><a href="#JS-events">Les écouteurs d'événements</a></li>
 		</ul>
 		</aside>
 	
@@ -113,9 +116,9 @@
 		<li><h4>Les balises &lt;meta&gt;</h4>
 			<ul>
 			<li><b>Description</b> : Cette balise permet aux moteurs de recherche de connaitre puis d'afficher dans les résultats la description du site, redigée par nos soins.<br>
-				Elle s'utilise de cette manière : <i>&lt;meta name="description" content="la desc. du site"&gt;</i></li><br>
+				Elle s'utilise de cette manière : <i>&lt;meta name="description" content="la desc. du site"&gt;</i></li>
 			<li><b>Keywords</b> : Cette balise permet de fournir aux moteurs de recherche des mots clés concernants le site.<br>Cela permet de faciliter la recherche du site sur Internet<br>
-				Elle s'utilise de cette manière : <i>&lt;meta name="keywords" content="tramway, strasbourg, cts"&gt;</i></li><br>
+				Elle s'utilise de cette manière : <i>&lt;meta name="keywords" content="tramway, strasbourg, cts"&gt;</i></li>
 			<li><b>Author</b> : Cette balise permet de fournir aux moteurs de recherche l'auteur d'une ou des pages du site<br>
 				Elle s'utilise de cette manière : <i>&lt;meta name="author" content="Lucas LETT"&gt;</i></li>
 
@@ -181,14 +184,14 @@
 		<h3>La propriété float du CSS</h3>
 		
 		<ol>
-		<li><h4></h4>
+		<li>
 		La propriété float va faire sortir l'élément équipé du "flux" standard. Il va donc y avoir des superpositions.
 		</li>
-		<li><h4></h4>
+		<li>
 		Pour eviter ces superpositions, je vais mettre les éléments voisins en float aussi.<br>
 		Je vais même utiliser la propriété clear !
 		</li>
-		<li><h4></h4>
+		<li>
 		Je vais utiliser "clear:both;" pour le footer, afin qu'il se place SOUS tous les éléments flottant.<br>
 		Il existe aussi "clear:left;" et "clear:right;".
 		</li>
@@ -213,7 +216,7 @@
 		Toutes les explications <a href="http://fr.learnlayout.com/position.html">ici</a>.
 		</li>
 		
-		<li><h4></h4>
+		<li>
 		Voir mon agencement personnalisé <a href="../../index.html">ici</a> 
 		</li>
 		</ol>
@@ -236,6 +239,52 @@
 	</section>
 	
 	
+	<section class="reponses" id="JS-object">
+		<h3>Les objets en Javascript</h3>
+		
+		<ol>
+		<li><h4>Les attributs et les méthodes</h4>
+		Les attributs sont les caracteristiques d'un objet, comme la massa ou la couleur puevent l'être pour une voiture.<br>
+		Les méthodes sont les fonctions pas lesquelles on va pouvoir acceder aux valeurs des attributs et les utiliser.
+
+		</li>
+		<li><h4>Creer un objet</h4>
+		Il faut utiliser un constructeur, avec la cmd new.
+		</li>
+		<li><h4>Accès aux données</h4>
+		via    objet_name.attribut<br>
+		ou     objet_name['attribut']
+		</li>
+		
+		</ol>
+	
+	</section>
+	
+	<section class="reponses" id="JS-events">
+		<h3>Les écouteurs d'événements</h3>
+		
+		<ol>
+		<li><h4></h4>
+		x.addEventListener(“mouseover”, fonction1) va effectuer la fonction1 si la souris survole l'élément x.
+		</li>
+		<li><h4></h4>
+		mouseover  et   mouseout détectent l'entrée et la sortie de la souris sur un élément.
+		</li>
+		<li><h4></h4>
+		document.getElementsByClassName(name) va récuperer les éléments du DOM appartenant à une classe donnée.
+		</li>
+		<li><h4></h4>
+		x.style.backgroundColor ="#ff0" va changer la couleur de fond de l'élément x.
+		</li>
+		<li><h4></h4>
+			position va sortir la description du flux pour pouvoir la placer sur l'image.<br>
+			display va par defaut cacher la description<br>
+			bottom va la placer à une distance du bas de l'image correpondant à 10% de sa propre taille<br>
+			left va coller la description à gauche
+		</li>
+		</ol>
+	
+	</section>
 	
 	</div>
 	

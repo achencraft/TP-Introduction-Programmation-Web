@@ -335,3 +335,20 @@ input{
 	border-radius:15px;
 }
 /*FIN formulaire de contact*/
+
+.js-image{
+	position: relative;
+	width:400px;
+}
+.js-description{
+display: none;
+position: absolute;
+bottom: 10%;
+left:0;
+padding: 10px;
+font-family: sans-serif;
+background-color: #000;
+color: #fff;
+opacity: 0.75;
+}
+
