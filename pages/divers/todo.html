@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<meta content="text/html" charset="UTF-8" http-equiv="Content-Type">		
 		<link rel="stylesheet" href="../../style/style.css" />
-		<link rel="stylesheet" href="./style/jquery.css" />
+		<link rel="stylesheet" href="../../style/todo.css" />
 		<link rel="icon" href="../../files/images/favicon.ico" />
-		<title>:: Demo de jQuery ::</title>
+		<title>:: To do list ::</title>
 		
 		<meta name="description" content="Présentation du réseau de tramway de strasbourg">
 		<meta name="author" content="Lucas LETT">
@@ -18,8 +18,7 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/file2.js"></script>
+
 		
 	</head>	
 <body>
@@ -86,8 +85,8 @@
 		<ul class="menu">
 			<li class="menu"><a href="contact.html">Contact</a></li>
 			<li class="menu"><a href="js.html">Javascript</a></li>
-			<li class="menu"><a href="">JQuery</a></li>
-			<li class="menu"><a href="todo.html">To Do List</a></li>
+			<li class="menu"><a href="jquery.html">JQuery</a></li>
+			<li class="menu"><a href="">To Do List</a></li>
 			<li class="menu"><a href="tp.html">Réponses aux TP</a></li>
 		</ul>
 		</div>
@@ -98,104 +97,49 @@
 	
 	<div id="contenu">
 
-	<h1> Demo de jquery </h1>
+	<h1> To do List </h1>
 	
 	
-	<section class="reponses" style="width:90%">
-	
-	<p class="tramway">Ceci est un paragraphe que j'aime bien</p>
-	
-	<p id="citadis">Ceci est un autre paragraphe</p>
-	
-	</section>
-	<section class="reponses" style="width:90%">
-	
-	<div class="callback">
-	<p>Du texte</p>
-	<p class="disparaitre">Test d’une fonction de rappel</p>
-	<p>Du texte, encore</p>
-	</div>
-	
-	
-	</section>
-	
-	
-		<section>
+
+
+	<section>
 	
 	<div class="contact">
-		<form name="contact">
-		
-			<div style="float:left; width:30%">
-			<p>Nom</p>
-			</div>
-			<div>
-			<input class="contact" name="nom" type="text" id="nom">
-			</div><p>
-			
-			<div style="float:left; width:30%">
-			<p>Prénom</p>
-			</div>
-			<div>
-			<input class="contact" name="prenom" type="text" id="prenom" />
-			</div><p>
-			
-			<div style="float:left; width:30%">
-			<p>N° étudiant</p>
-			</div>
-			<div>
-			<input class="contact" name="numero" type="text" id="numero" />
-			</div><p>
-			
-			<div style="float:left; width:30%">
-			<p>Abonné CTS</p>
-			</div>
-			<div class="radio">
-			<input type="radio" name="cts" value="oui" id="cts1">oui</input> 
-			<input type="radio" name="cts" value="non" id="cts2">non</input>
-			</div><p>
-
-			<div style="float:left; width:30%">
-			<p>Filière</p>
-			</div>
-			
-			</form>
-			<div class="radio">
-			<select name="filiere" form="filiere" id="filiere">
-			<option value="-">-</option>
-			<option value="Maths">Maths</option>
-			<option value="Info">Info</option>
-			<option value="CMI">CMI</option>
-			<option value="MPA">MPA</option>
-			</select>
-			</div><p>
-
-			<div style="margin-left: auto;margin-right: auto;width:30%;">
-			<input class="boutonSoumission" id="envoi" type=submit value="Soumettre">
-			</div><p>
-			
-			<div align="center">
-			Nombre de réponses : <span id="quantite">0</span>
-			</div>
-		
+		<form name="nouveau_element" class="add_item">
 		
 
+			
+			<input class="contact" name="nouveau" type="text" id="nouveau" placeholder="Nouvel item...">
+
+			<input class="add_item" id="envoi" value="Ajouter">
+			<p>
+		</form>
 			
 	</div>	
+
+	</section >
+	<section class="todolist">
 	
-		<div id="sortie_formulaire">
-		
-		</div>
+	<ul class="todolist">
+	<li class="todo"> Manger des cornichons </li>
+	<li class="todo todo_checked"> Boire du lait </li>
+	<li class="todo"> Acheter du chocolat </li>
+	
+	
+	</ul>
+	
+
 	</section>
-	
-	
+
 	</div>
+	
 	<footer>
 	Page web réalisée par Lucas LETT - groupe 1 - CMI ISR    :: <b> Site complet disponible <a href="http://achencraft.fr/unistra">ici</a></b>
 	</footer>
 	
 	
-	
-		
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="./js/todo.js"></script>
 	
 	
 </body>
